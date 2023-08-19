@@ -37,20 +37,13 @@ var questionBank = [
     },   
 ]
 
-var question= document.getElementById
-('question');
-var quizContainer= document.getElementById
-('quiz-Container');
-var scoreboard= document.getElementById
-('scoreboard');
-var option0= document.getElementById
-('option0');
-var option1= document.getElementById
-('option1');
-var option2= document.getElementById
-('option2');
-var option3= document.getElementById
-('option3');
+var question= document.getElementById('question');
+var quizContainer= document.getElementById('quiz-Container');
+var scorecard= document.getElementById('scorecard');
+var option0= document.getElementById('option0');
+var option1= document.getElementById('option1');
+var option2= document.getElementById('option2');
+var option3= document.getElementById('option3');
 var next= document.querySelector('.next');
 var points= document.getElementById('score');
 var span= document.querySelectorAll('span');
@@ -67,10 +60,10 @@ function displayQuestion(){
     option1.innerHTML= questionBank[i].Option[1];
     option2.innerHTML= questionBank[i].Option[2];
     option3.innerHTML= questionBank[i].Option[3];
-    stat.innerHTML= "Question"+' '+(i+1)+' '+'of '+ questionBank.length;
+    stat.innerHTML= "Question"+' '+(i+1)+' '+'of '+' '+ questionBank.length;
 }
 
-//function to calculate score
+//function to calculate scores
 function calcScore(e) {
     if(e.innerHTML===questionBank[i].answer && score<questionBank.length) 
     {
@@ -118,4 +111,6 @@ function checkAnswer(){
         answers.appendChild(list);
     }
 }
+
+
 displayQuestion();
