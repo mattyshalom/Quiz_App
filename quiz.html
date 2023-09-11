@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Time</title>
+    <title>Quiz Wuiz</title>
 
-    <!---css link-->
+    <!-- css file link -->
     <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
     <img src="/Quiz__1 (1).png" alt="img" id="img" class="img">
-    <h1 id="title">Quiz Time</h1>
+    <h1 id="title">Today's Quiz</h1>
 
+    <div id="timer">
+        Time Remaining: <span id="countdown">60</span> seconds
+    </div>
 
-    <!--quiz container-->
-    <div id="quizContainer">
-        <!--question Container-->
+    <!-- quiz-container -->
+    <div id="quiz-container">
+        <!-- question container -->
         <div class="questions">
             <h2 id="question"></h2>
             <ol type="A">
@@ -28,11 +31,13 @@
         </div>
 
         <div class="buttons">
+            <button id="prev-btn" type="button" class="previous">Previous</button>
             <button type="button" class="next">Next</button>
         </div>
-</div>
 
-    <!--scoreboard section-->
+    </div>
+
+    <!-- scoreboard section -->
     <div id="scoreboard">
         <img src="/Quiz__1 (1).png" alt="">
         <h2 id="score-title">Your Score</h2>
@@ -40,19 +45,17 @@
         <button type="button" id="score-btn" onclick="backToQuiz()">Back to Quiz</button>
         <button type="button" id="check-answer" onclick="checkAnswer()">Check Answers</button>
     </div>
-    
-    <!--answers sections-->
+
+    <!-- answers section -->
     <div id="answerBank">
         <h2>Answers :</h2>
         <ol type="1" id="answers">
-
 
         </ol>
         <button type="button" id="score-btn" onclick="backToQuiz()">Back to Quiz</button>
     </div>
 
-    <!--javascript file -->
-    <script src="/quiz.js"></script>
-
+    <!-- javascript file source -->
+    <script src="quiz.js"></script>
 </body>
 </html>
