@@ -94,6 +94,7 @@ function nextQuestion(){
     }
 }
 
+//function to display timer
 function startTimer() {
             const timer = setInterval(() => {
                 countdown--;
